@@ -65,7 +65,10 @@ data:
   SPRING_DATASOURCE_URL: jdbc:postgresql://seating-db:5432/seating_db
   SPRING_DATASOURCE_USERNAME: seating_user
   SPRING_DATASOURCE_PASSWORD: seating_password
+  SPRING_DATASOURCE_DRIVER_CLASS_NAME: org.postgresql.Driver
+  SPRING_JPA_HIBERNATE_DDL_AUTO: update
   SERVER_PORT: "8082"
+
 ---
 # Seating Service Deployment
 apiVersion: apps/v1

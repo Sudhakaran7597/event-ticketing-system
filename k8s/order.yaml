@@ -65,10 +65,13 @@ data:
   SPRING_DATASOURCE_URL: jdbc:postgresql://order-db:5432/order_db
   SPRING_DATASOURCE_USERNAME: order_user
   SPRING_DATASOURCE_PASSWORD: order_password
+  SPRING_DATASOURCE_DRIVER_CLASS_NAME: org.postgresql.Driver
+  SPRING_JPA_HIBERNATE_DDL_AUTO: update
   SERVER_PORT: "8083"
   CATALOG_SERVICE_URL: http://catalog-service:8081
   SEATING_SERVICE_URL: http://seating-service:8082
   PAYMENT_SERVICE_URL: http://payment-service:8084
+
 ---
 # Order Service Deployment
 apiVersion: apps/v1
